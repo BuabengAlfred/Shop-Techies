@@ -258,7 +258,7 @@ nav ul li a{
 .cart-items{
     display: flex;
     flex-direction: column;
-    height: 30em;
+    height: 28em;
     gap: 10px;
     margin-top: 1rem;
     overflow-y: scroll;
