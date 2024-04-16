@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Techies | E-commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!---- font awesome icons cdn link --->
+    <link
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header--menu">
+                <!--<div class="menu--bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>-->
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#cat">Categories</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="img/menu.png" class="menu-icon"
+                onclick="menutoggle()">
+                <div class="search--box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"  onclick="toggleSearchBox()"></i>
+                    <input type="text" placeholder="Search" class="search-input">
+                </div>
+                <div class="menu--icons">
+                    <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                    <div class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+
+        <!-- creating a row with two columns -->
+            <div class="row">
+                <div class="col-2">
+                    <h1>Elevate Your Workout <br>Elevate Your World!</h1>
+                    <p><b>Give Your Workout A New Style!</b><br>Success isn't always about greatness. It's about 
+                    consistancy. Consistent <br>hardwork gain success. Greatness
+                    will come.</p>
+                    <a href="https://youtu.be/OVcNRUESqvA?si=u4Srjcf7zSvL6jSn" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="img/image1.png">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- cover section / banner 
+    <section class="cover">
+        <div class="cover--overlay">
+            <h1>Shop Techies</h1>
+            <span class="slogan">Elevate Your Workout! Elevate Your World!</span>
+        </div>
+    </section> -->
+
+    <!------ featured categories ------>
+    <div class="categories" id="cat">
+        <div class="small-container">
+            <div>
+                <iframe width="100%" height="350px" src="https://www.youtube.com/embed/OVcNRUESqvA?si=u4Srjcf7zSvL6jSn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <a href="#dumbbells"><img src="img/category-1.jpg" alt=""></a>
+                </div>
+                <div class="col-3">
+                    <a href="#heavy"><img src="img/category-2.jpg" alt=""></a>
+                </div>
+                <div class="col-3">
+                    <a href="#cardios"><img src="img/category-3.jpg" alt=""></a>
+                </div>
+                <!-----embedded youtube video of Joe Holder----->
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <main>
+
+<!-------- Featured Products section -------->
+    <div class="bg">
+        <div class="small-container">
+            <h2 class="title">Featured Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/product-1.jpg" alt="">
+                        <h4 class="card--title">Pudent Classic Pull Up Board Stretch</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/product-2.jpg" alt="">
+                        <h4 class="card--title">BCBIG Adjustable-Dumbbells-Sets</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/product-3.jpg" alt="">
+                        <h4 class="card--title">Signature Fitness Stepping</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/product-4.jpg" alt="">
+                        <h4 class="card--title">Fitove Pull Up Bench Set</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    
+        
+<!-------- Latest Products section -------->
+      
+        <div class="small-container">
+            <h2 class="title">Latest Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/product-5.jpg" alt="">
+                        <h4 class="card--title">GYMAX Folding Treadmill Machine</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/product-6.jpg" alt="">
+                        <h4 class="card--title">TKO Plate Loaded Lat Pull Down Machine</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/product-7.jpg" alt="">
+                        <h4 class="card--title">ADJUSTABLE DUMBBELLS 25_55</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/product-8.jpg" alt="">
+                        <h4 class="card--title">Flexibility & Body Stretching Machine</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/product-9.jpg" alt="">
+                        <h4 class="card--title">GYMAX Folding Treadmill Machine</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/product-10.jpg" alt="">
+                        <h4 class="card--title">TKO Plate Loaded Lat Pull Down Machine</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/product-11.jpg" alt="">
+                        <h4 class="card--title">ADJUSTABLE DUMBBELLS 25_55</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/product-12.jpg" alt="">
+                        <h4 class="card--title">Flexibility & Body Stretching Machine</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        
+<!-------- Dumbbells Category -------->
+        <div class="small-container">
+            <h2 class="title" id="dumbbells">Dumbbell Equipments</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/dum-1.jpg" alt="">
+                        <h4 class="card--title">North Deer Adjustable Dumbbell</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/dum-2.jpg" alt="">
+                        <h4 class="card--title">15KG Rubber Hex Dumbbell Pair</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/dum-3.jpg" alt="">
+                        <h4 class="card--title">Adjustable Dumbbells And Kettlebell - 77 LBS</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/dum-4.jpg" alt="">
+                        <h4 class="card--title">Adjustable Dumbbells Pair 2_3_4_5 LBS</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/dum-5.jpg" alt="">
+                        <h4 class="card--title">Iron Company 10_45 Dumbbell</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/dum-6.jpg" alt="">
+                        <h4 class="card--title">CAP Neoprene Coated Dumbbell Weights</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/dum-7.jpg" alt="">
+                        <h4 class="card--title">Marcy Adjustable Dumbbell System</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/dum-8.jpg" alt="">
+                        <h4 class="card--title">Lifelong PVC Hex Dumbbells Pair</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-------- Heavyweight Category -------->
+        <div class="small-container">
+            <h2 class="title" id="heavy">Heavyweight Equipments</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/heav-1.jpg" alt="">
+                        <h4 class="card--title">Barbarian Line Bench</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/heav-2.jpg" alt="">
+                        <h4 class="card--title">Kuntopenkki Painotangolla + Levy 30.5KG</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/heav-3.jpg" alt="">
+                        <h4 class="card--title">Force USA Fixed Curl Barbell Set and Stand</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/heav-4.jpg" alt="">
+                        <h4 class="card--title">Fixed Barbell Set with Rack 10_50kg</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/heav-5.jpg" alt="">
+                        <h4 class="card--title">Adjustable 20kg 30kg 40kg Barbell Weights Set</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/heav-6.jpg" alt="">
+                        <h4 class="card--title">Benches _ ESP Fitness</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/heav-7.jpg" alt="">
+                        <h4 class="card--title">Barbell 15.8KG Lift</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/heav-8.jpg" alt="">
+                        <h4 class="card--title">Adjustable Weight Bench</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-------- Cardio Category -------->
+        <div class="small-container">
+            <h2 class="title" id="cardios">Cardio Equipments</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/car-1.jpg" alt="">
+                        <h4 class="card--title">GYMAX_2 Folding Treadmill</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/car-2.jpg" alt="">
+                        <h4 class="card--title">Loute Wrist Exerciser</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/car-3.jpg" alt="">
+                        <h4 class="card--title">N1 Fit ABS Roller Wheel</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/car-4.jpg" alt="">
+                        <h4 class="card--title">Curve XL - Woodway</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/car-5.jpg" alt="">
+                        <h4 class="card--title">4-Wheel Abdominal Rebounder </h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/car-6.jpg" alt="">
+                        <h4 class="card--title">Reddar Pull Up Board</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/car-7.jpg" alt="">
+                        <h4 class="card--title">GR8FLEX - Pearl White XL Model</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/car-8.jpg" alt="">
+                        <h4 class="card--title">Colourful Dashed Pushup Bar</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="card--price">
+                            <div class="price">₵12999.00</div>
+                            <i class="fa-solid fa-plus add-to-cart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!------- offer ------->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/exclusive.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on Shop Techies</p>
+                <h1>GiExpo Leather Gloves 4</h1>
+                <small>The GiExpo Leather Gloves 4 feature a 39.9% Leather
+                (than GiExpo Gloves 3) AMOLED color full-touch softness with
+                adjustable wrist tighter, so everything is fit for grabs. <br></small>
+                <a href="https://www.alibaba.com/product-detail/Gym-Gloves-Fitness-Exercise-Weightlifting-Weight_62195205984.html?spm=a2700.galleryofferlist.p_offer.d_title.54816379qdGIqQ&s=p">
+                    <span class="btn">Buy Now &#8594;</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------- testimonial ------------->
+<div class="about" id="about">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p><b>Lead Project Manager</b> <br>Contributed to approximately 
+                    100% of this project.<br> <br><b>Index Number:</b> 5211040269</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img src="img/user-4.jpg">
+                <h3>Alfred Buabeng</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p><b>----</b> <br>Contributed to approximately 
+                    ---% of this project.<br> <br><b>Index Number:</b> 521104026-</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="img/user-2.png">
+                <h3>Prince Amofah</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p><b>----</b> <br>Contributed to approximately 
+                    ---% of this project.<br> <br><b>Index Number:</b> 521104026-</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="img/user-3.png">
+                <h3>Nancy Ayoni</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p><b>----</b> <br>Contributed to approximately 
+                    ---% of this project.<br> <br><b>Index Number:</b> 521104026-</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="img/user-2.png">
+                <h3>---</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p><b>----</b> <br>Contributed to approximately 
+                    ---% of this project.<br> <br><b>Index Number:</b> 521104026-</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="img/user-2.png">
+                <h3>Prince Simms</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p><b>----</b> <br>Contributed to approximately 
+                    ---% of this project.<br> <br><b>Index Number:</b> 521104026-</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="img/user-2.png">
+                <h3>John Boadi</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p><b>----</b> <br>Contributed to approximately 
+                    ---% of this project.<br> <br><b>Index Number:</b> 521104026-</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="img/user-2.png">
+                <h3>Rich Asare</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p><b>----</b> <br>Contributed to approximately 
+                    ---% of this project.<br> <br><b>Index Number:</b> 521104026-</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="img/user-2.png">
+                <h3>Prince Asare</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p><b>----</b> <br>Contributed to approximately 
+                    ---% of this project.<br> <br><b>Index Number:</b> 521104026-</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="img/user-2.png">
+                <h3>Ali Mohammed</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------- brands ------->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="img/logo-godrej.png" class="offer-img">
+            </div>
+            <div class="col-5">
+                <img src="img/logo-oppo.png" class="offer-img">
+            </div>
+            <div class="col-5">
+                <img src="img/logo-coca-cola.png" class="offer-img">
+            </div>
+            <div class="col-5">
+                <img src="img/logo-paypal.png" class="offer-img">
+            </div>
+            <div class="col-5">
+                <img src="img/logo-philips.png" class="offer-img">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+        <!-- card item section -->
+        
+
+        <!-- cart sidebar section -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-close">
+                <i class="fa-solid fa-close"></i>
+            </div>
+            <div class="cart-menu">
+                <h3>Shopping Cart</h3>
+                <div class="cart-items"></div>
+            </div>
+    
+            <div class="sidebar--footer">
+                <div class="total--amount">
+                    <h5>Total</h5>
+                    <div class="cart-total">₵0.00</div>
+                </div>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <!-------- footer --------->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App from Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/apps"><img src="img/play-store.png"></a>
+                        <a href="https://www.apple.com/app-store/"><img src="img/app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/logo-white.png">
+                    <p>Our purpose is to Sustainly Make the Pleasure and
+                    Benefit of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://web.facebook.com/officialspycart18">Facebook</a></li>
+                        <li><a href="">Twitter</a</li>
+                        <li><a href="">Instagram</a</li>
+                        <li><a href="https://www.youtube.com/channel/UCoxpeoYx-f_bSJvuq2j3oaA">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - Shop Techies</p>
+        </div>
+    </div>
+
+<!---------- js for toggle menu ------------>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+    }
+</script> 
+
+<script>
+    var searchBox = document.querySelector('.search-box');
+    var searchIcon = document.querySelector('.search-icon');
+    
+    searchIcon.onclick = function() {
+        searchBox.classList.toggle('active');
+        }
+</script>
+
+<script>prompt
+alert("For Students' Name and Index Numbers, click on the 'ABOUT' tab");</script>
+    <script src="./main.js"></script>
+</body>
+</html>

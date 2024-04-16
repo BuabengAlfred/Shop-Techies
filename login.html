@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="sign.css">
+    <script>
+        var users = [
+            {
+                "id": 1,
+                "username": "user1",
+                "password": "password1",
+                "email": "user1@example.com"
+            },
+            {
+                "id": 2,
+                "username": "user2",
+                "password": "password2",
+                "email": "user2@example.com"
+            }
+        ];
+        
+        function onFormSubmit() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            
+            for (var i = 0; i < users.length; i++) {
+                if (users[i].email === email && users[i].password === password) {
+                    window.location.href = 'index.html';
+                    return false;
+                }
+            }
+            
+            alert('Invalid email or password');
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div class="login-form-container">
+        <div class="form-container">
+          <form onsubmit="return onFormSubmit();" autocomplete="false" class="form">
+            <h4 class="form-header">
+              Login
+              <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            </h4>
+            <div class="flex-col-gap">
+            <div class="control">
+              <label for="email">Email</label>
+              <input name="email" id="email" email="true" required type="email">
+            </div>
+            <div class="control">
+              <label for="password">Password</label>
+              <input minlength="4" name="password" autocomplete="new-password" id="password" required type="password">
+            </div>
+            </div>
+            <div class="control">
+              <button class="btn" type="submit">Login</button>
+              <p class="alter-way">
+                <a href="signup.html"><small><i>Create a new account</i></small></a>
+              </p>
+            </div>
+            <div class="social-links-container">
+              <div class="hr"></div>
+              <app-social-links></app-social-links>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script>
+        document.getElementById('email').value = users[0].email;
+        document.getElementById('password').value = users[0].password;
+      </script>
+</body>
+</html>

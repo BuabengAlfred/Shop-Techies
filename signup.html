@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <script>
+        function onFormSubmit(formValues) {
+            alert('Form submitted successfully');
+            window.location.href = 'login.html';
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div class="signup-form-container">
+        <div class="form-container">
+          <form onsubmit="return onFormSubmit();" autocomplete="false" class="form">
+            <h4 class="form-header">Sign up
+              <i class="fa fa-sign-in" aria-hidden="true"></i>
+            </h4>
+            <div class="flex-col-gap">
+            <div class="control">
+              <label for="name">Name</label>
+              <input minlength="3" name="name" required id="name" type="text">
+            </div>
+            <div class="control">
+              <label for="phone">Phone</label>
+              <input pattern="[0-9]{10}" name="phone" required id="phone" type="text">
+            </div>
+            <div class="control">
+              <label for="email">Email</label>
+              <input email="true" name="email" required id="email" type="text">
+            </div>
+            <div class="control">
+              <label for="password">Password</label>
+              <input minlength="4" name="password" required autocomplete="new-password" id="password" type="password">
+            </div>
+            </div>
+            <div class="control">
+              <button class="btn" type="submit">Signup</button>
+              <p class="alter-way">
+                <a href="login.html"><small><i>Already have an account?</i></small></a>
+              </p>
+            </div>
+            <div class="social-links-container">
+              <div class="hr"></div>
+              <app-social-links></app-social-links>
+            </div>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
