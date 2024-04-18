@@ -35,6 +35,10 @@
             alert('Invalid email or password');
             return false;
         }
+
+        function closeLogin() {
+            window.location.href = 'index.html';
+        }
     </script>
 </head>
 <body>
@@ -57,6 +61,7 @@
             </div>
             <div class="control">
               <button class="btn" type="submit">Login</button>
+              <button class="btn" type="button" onclick="closeLogin()">Close</button>
               <p class="alter-way">
                 <a href="signup.html"><small><i>Create a new account</i></small></a>
               </p>
@@ -68,9 +73,5 @@
           </form>
         </div>
       </div>
-      <script>
-        document.getElementById('email').value = users[0].email;
-        document.getElementById('password').value = users[0].password;
-      </script>
 </body>
 </html>
