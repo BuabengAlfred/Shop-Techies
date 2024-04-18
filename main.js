@@ -1,3 +1,43 @@
+function sendMail() {
+    let parms = {
+        name : document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        subject : document.getElementById("subject").value,
+        message : document.getElementById("message").value  
+    }
+
+    emailjs.send("service_z111d1k","template_jaybv92", parms);
+    
+}
+
+function validateForm() {
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let subject = document.getElementById('subject').value;
+    let message = document.getElementById('message').value;
+
+    if (!name || !email || !subject || !message) {
+        alert('All fields are required!');
+        return false;
+    }
+
+    
+    
+    
+
+    return true;
+}
+
+document.getElementById('okButton').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    if (validateForm()) {
+        sendMail();
+        closePopup();
+        resetCart();
+    }
+});
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const addToCartButtons = document.querySelectorAll('.add-to-cart');

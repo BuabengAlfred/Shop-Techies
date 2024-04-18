@@ -9,6 +9,17 @@
     <link
         rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+         emailjs.init({
+             publicKey: "vcOYaTAMrdNLLiF_M",
+          });
+     })();
+    </script>
 </head>
 <body>
     <header class="header">
@@ -979,7 +990,38 @@
 
 
 
-        <!-- card item section -->
+        <!-- popup section -->
+        <div class="popup" id="popup">
+            <img src="img/tick.png">
+            <h2>Checkout</h2>
+            <form id="form" onsubmit="sendMail()">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Location:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Phone Number:</label>
+                    <input type="text" id="message" name="message" required></input>
+                </div>
+                <button type="submit" id="okButton" onclick="closePopup();openThanks()">Submit</button>
+            </form>
+        </div>
+
+        <!-- popup section -->
+        <div class="thanks" id="thanks">
+            <img src="img/tick.png">
+            <h2>Thank You!</h2>
+            <p>Your order has been successfully submitted. Thanks!</p>
+            <button type="submit" id="okButton" onclick="closeThanks()">OK</button>
+        </div>
         
 
         <!-- cart sidebar section -->
@@ -987,7 +1029,7 @@
             <div class="sidebar-close">
                 <i class="fa-solid fa-close"></i>
             </div>
-            <div class="cart-menu">
+            <div class="cart-menu" id="cart-menu">
                 <h3>Shopping Cart</h3>
                 <div class="cart-items"></div>
             </div>
@@ -997,7 +1039,7 @@
                     <h5>Total</h5>
                     <div class="cart-total">₵0.00</div>
                 </div>
-                <button class="checkout-btn">Checkout</button>
+                <button class="checkout-btn" onclick="openPopup()">Checkout</button>
             </div>
         </div>
     </main>
@@ -1071,8 +1113,47 @@
         }
 </script>
 
-<script>prompt
-alert("For Students' Name and Index Numbers, click on the 'ABOUT' tab");</script>
-    <script src="./main.js"></script>
+<!-- alert for index numbers -->
+<script>
+alert("For Students' Name and Index Numbers, click on the 'ABOUT' tab");
+</script>
+
+<!-- external script file -->
+<script src="./main.js"></script>
+
+<!-- popup -->
+<script>
+    let popup = document.getElementById('popup');
+
+    function openPopup() {
+        popup.classList.add("open-popup");
+        sidebar.classList.remove('open');
+    }
+
+    function closePopup() {
+        popup.classList.remove("open-popup");
+    }
+
+    document.getElementById('okButton').addEventListener('click', closePopupAndClearCart);
+
+</script>
+
+<!-- thanks -->
+<script>
+    let thanks = document.getElementById('thanks');
+
+    function openThanks() {
+        thanks.classList.add("open-thanks");
+        popup.classList.remove('open');
+    }
+
+    function closeThanks() {
+        thanks.classList.remove("open-thanks");
+    }
+
+    document.getElementById('okButton').addEventListener('click', closeThanksAndClearCart);
+
+</script>
+
 </body>
 </html>
